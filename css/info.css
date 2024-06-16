@@ -1,0 +1,155 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: start;
+    background: linear-gradient(to right, #f0f0f0, #e0f7fa);
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: start;
+    padding: 110px 20px; /* Increased padding for larger height */
+    background: linear-gradient(to right, #4AA0D5, #4AA0D5); /* Gradient background for more appeal */
+    color: #fff;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px; /* Larger font size for heading */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.hero-content p {
+    font-size: 20px; /* Larger font size for paragraph */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.try-tool-button {
+    background-color: #fff;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    padding: 20px 40px; /* Increased padding for larger button */
+    font-size: 24px; /* Larger font size for button text */
+    border-radius: 50px; /* Rounder border for button */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.hero-image img {
+    /* max-width: 100%; */
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Additional Info Section */
+.additional-info {
+    background: #fff;
+    padding: 40px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.additional-info h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.additional-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.additional-info .disclaimer,
+.additional-info .data,
+.additional-info .credits {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.additional-info h3 i {
+    margin-right: 10px;
+    font-size: 20px; /* Adjust icon size */
+}
+
+.additional-info .disclaimer h3,
+.additional-info .data h3,
+.additional-info .credits h3 {
+    color: #007bff;
+}
+
+.additional-info .disclaimer p,
+.additional-info .data p,
+.additional-info .credits p {
+    color: #555;
+}
+
+.additional-info .disclaimer:hover,
+.additional-info .data:hover,
+.additional-info .credits:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .additional-info .disclaimer,
+    .additional-info .data,
+    .additional-info .credits {
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+    .try-tool-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .hero-image img {
+        width: 350px;
+        height: auto;
+    }
+}
